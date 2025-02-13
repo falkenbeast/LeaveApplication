@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "421609820711",
+    "project_id": "falkenbeastleaveapp",
+    "storage_bucket": "falkenbeastleaveapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421609820711:android:8ecf0faad4f8861a247402",
+        "android_client_info": {
+          "package_name": "com.falkenbeast.leaveapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwdu74Wdr-IEUjkogUIzf47bmDDe94WpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

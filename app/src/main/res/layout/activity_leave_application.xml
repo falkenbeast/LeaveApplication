@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Leave Application Form"
-            android:textSize="28dp"
+            android:textSize="28sp"
             android:textColor="#3C3832"
             android:textStyle="bold"
             android:gravity="center"
@@ -39,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Enter Reason for Leave"
                 android:textColorHint="#878686"
+                android:textColor="@color/black"
                 android:padding="16dp"
                 android:textSize="16sp"
                 android:background="@android:color/transparent"/>
@@ -58,12 +59,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#878686"
-                android:hint="Enter Start Date (DD/MM/YYYY)"
+                android:hint="Select Start Date"
                 android:padding="16dp"
                 android:textSize="16sp"
-                android:inputType="date"
-                android:maxLength="10"
-                android:background="@android:color/transparent"/>
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:clickable="true"/>
         </androidx.cardview.widget.CardView>
 
         <!-- End Date Input -->
@@ -81,11 +83,12 @@
                 android:layout_height="wrap_content"
                 android:textColorHint="#878686"
                 android:background="@android:color/transparent"
-                android:hint="Enter End Date (DD/MM/YYYY)"
-                android:inputType="date"
-                android:maxLength="10"
+                android:textColor="@color/black"
+                android:hint="Select End Date"
                 android:padding="16dp"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:focusable="false"
+                android:clickable="true"/>
         </androidx.cardview.widget.CardView>
 
         <!-- Submit Button -->
@@ -105,7 +108,7 @@
             android:layout_height="wrap_content"
             android:text="Leave History"
             android:backgroundTint="#FD7F00"
-            android:textColor="@android:color/white"
+            android:textColor="@color/white"
             android:layout_gravity="end"
             android:layout_marginTop="100dp"
             android:layout_marginEnd="20dp"/>

@@ -45,11 +45,13 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailLayout"
-        app:passwordToggleEnabled="true">
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@color/black"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passET"
-        android:textColor="@color/black"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Type Your Password"

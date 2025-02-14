@@ -74,6 +74,8 @@ class LeaveApplicationActivity : AppCompatActivity() {
             }
     }
 
+
+
     private fun logoutUser() {
         auth.signOut() // Fixed crash issue
         Toast.makeText(this, "Logged out successfully!", Toast.LENGTH_SHORT).show()

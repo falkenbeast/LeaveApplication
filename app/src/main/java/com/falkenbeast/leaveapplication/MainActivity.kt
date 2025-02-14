@@ -1,16 +1,23 @@
 package com.falkenbeast.leaveapplication
 
-
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        val intent = Intent(this, LeaveApplicationActivity::class.java)
-        startActivity(intent)
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user != null) {
+            val intent = Intent(this, LeaveApplicationActivity::class.java)
+            startActivity(intent)
+            finish()
+        } else {
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

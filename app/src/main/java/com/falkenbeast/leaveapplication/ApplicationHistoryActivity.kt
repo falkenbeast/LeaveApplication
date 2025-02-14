@@ -1,5 +1,6 @@
 package com.falkenbeast.leaveapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -50,5 +51,16 @@ class ApplicationHistoryActivity : AppCompatActivity() {
             .addOnFailureListener {
                 Toast.makeText(this, "Error fetching history!", Toast.LENGTH_SHORT).show()
             }
+    }
+
+    override fun onBackPressed() {
+        val fromLeaveApplication = intent.getBooleanExtra("fromLeaveApplication", false)
+        if (fromLeaveApplication) {
+            val backIntent = Intent(this, LeaveApplicationActivity::class.java)
+            startActivity(backIntent)
+            finish()
+        } else {
+            super.onBackPressed()
+        }
     }
 }

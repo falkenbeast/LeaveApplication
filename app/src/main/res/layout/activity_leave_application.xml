@@ -18,10 +18,11 @@
             android:layout_height="wrap_content"
             android:text="Leave Application Form"
             android:textSize="28dp"
+            android:textColor="#3C3832"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_gravity="center"
-            android:layout_marginBottom="140dp"/>
+            android:layout_marginBottom="180dp"/>
 
         <!-- Reason Input -->
         <androidx.cardview.widget.CardView
@@ -37,6 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Reason for Leave"
+                android:textColorHint="#878686"
                 android:padding="16dp"
                 android:textSize="16sp"
                 android:background="@android:color/transparent"/>
@@ -55,6 +57,7 @@
                 android:id="@+id/etStartDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="#878686"
                 android:hint="Enter Start Date (DD/MM/YYYY)"
                 android:padding="16dp"
                 android:textSize="16sp"
@@ -76,6 +79,7 @@
                 android:id="@+id/etEndDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="#878686"
                 android:background="@android:color/transparent"
                 android:hint="Enter End Date (DD/MM/YYYY)"
                 android:inputType="date"
@@ -103,7 +107,7 @@
             android:backgroundTint="#FD7F00"
             android:textColor="@android:color/white"
             android:layout_gravity="end"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="20dp"/>
 
         <!-- Logout Button (Bottom Left) -->

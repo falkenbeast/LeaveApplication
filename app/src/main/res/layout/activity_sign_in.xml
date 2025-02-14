@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="350dp"
-        app:boxStrokeColor="#FFEB3B"
-        app:hintTextColor="#FFEB3B"
+        app:boxStrokeColor="#FFBA3B"
+        app:hintTextColor="#FFAD3B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,10 +24,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailEt"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Type your Email"
+            android:textColor="@color/black"
+
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -38,8 +39,8 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="24dp"
-        app:boxStrokeColor="#FFEB3B"
-        app:hintTextColor="#FFEB3B"
+        app:boxStrokeColor="#FFBA3B"
+        app:hintTextColor="#FFAD3B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +49,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passET"
-
+        android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Type Your Password"
